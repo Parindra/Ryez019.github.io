@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Perancangan Website</title>
+    <title>Registrasi</title>
 </head>
-<body>
-	<form>
-		<input type="text" name="" placeholder="Nama"><br>
-		<input type="number" name="" placeholder="NIM"><br>
-		<input type="password" name="" placeholder="password"><br>
-		<input type="radio" name="gender">Pria <br>
-		<input type="radio" name="gender">Cewek <br>
-		<input type="checkbox" name="">Saya Menyetujui persyaratan <br>
-		<button type="button">SUBMIT</button>
-	</form>
-
+<style>
+	fieldset {
+	background-color: silver;
+	text-align: center;
+	border: 10px solid #000000;
+	font-size: 14px;
+	padding: 1em 2em;
+}
+</style>
+<body bgcolor="yellow">
+<p align="center"><img src="http://kemahasiswaan.unej.ac.id/wp-content/uploads/2016/08/cropped-logo-unej.png" width="100" height="100" ></p>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Nim:</label>
+            <input type="number" name="nim" placeholder="Nim" />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Passowrd..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+		<br><input type="checkbox" name="ya"> Saya Menyutujui Persyaratan</p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+   <div style="background-color: silver; border: 5px solid #17202A; height: auto; margin: 10px 0px; padding: 5px; text-align: center; width: auto;">
+    Copright@Agung Santoso</div>
 </body>
 </html>
