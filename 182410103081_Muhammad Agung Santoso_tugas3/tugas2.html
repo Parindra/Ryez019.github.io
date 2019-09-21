@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+
+<body>
+
+	<div class ="Login">
+		<p class="boxLogin">Masuk</p>
+		<form action="contact.php" method="POST">
+				<p>
+					<label>Username:</label><br>
+					<input type="text" class="form"  placeholder="Username"/>
+				</p>
+				<p>
+					<label>Password:</label><br>
+					<input type="Password" class="form" placeholder="Password"/>
+				</p>
+				<br>
+				<p>
+					<input type="submit" class="submit" value="Masuk"/>
+				</p>
+		</form>
+	</div>
+	<div class="Signup">
+		<p class="boxSignup">Daftar Disini</p>
+		<form action="contact.php" method="POST">
+				<p>
+					<label>Email:</label><br>
+					<input type="text" class="form" placeholder="Email"/>
+				</p>
+				<p>
+					<label>Username:</label><br>
+					<input type="text" class="form" placeholder="Username"/>
+				</p>
+				<p>
+					<label>Password:</label><br>
+					<input type="Password" class="form" placeholder="Password"/>
+				</p>
+				<p>
+					<label>Confirm Your Password:</label><br>
+					<input type="Password" class="form" placeholder="Confirm Your Password"/>
+				</p>
+				<p>
+					<input type="submit" class="submit" value="Daftar"/>
+				</p>
+		</form>
+		
+	</div>
+<style type="text/css">
+	body{
+		background-image:url(john-schnobrich-2FPjlAyMQTA-unsplash.jpg); 
+		background-size: 100%;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.Login{
+		background: white;
+		color: black;
+		opacity:0.9;
+		position: absolute; 
+		border-style: none;
+		width: 300px;
+		margin-top: 80px;
+		margin-left: 300px;
+		margin-right: 50px;
+		border-radius: 25px;
+		padding: 10px;
+	}
+	.Signup{
+		opacity:0.9;
+		background: white;
+		background-position: center;
+		position: absolute;
+		border-style: none;
+		width: 300px;
+		margin-top: 80px;
+		margin-left: 650px;
+		margin-right: 50px;
+		border-radius: 25px;
+		padding: 10px;
+	}
+	.boxLogin{
+		text-align: center;
+		font-family: sans-serif;
+	}
+	.boxSignup{
+		text-align: center;
+		font-family: sans-serif;
+	}
+	.submit{
+		background:#46de4b;
+		border: none;
+		color: white;
+		font-family: sans-serif;
+		width: 100%;
+		font-size: 20px;
+		border-radius: 25px;
+		box-sizing: border-box;
+	}
+	.boxLogin{
+		font-size: 30px;
+	}
+	.boxSignup{
+		font-size: 30px;
+	}
+	.form{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		font-size: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border-style: groove;
+	}
+</style>
+</body>
+</html>
